@@ -1,4 +1,4 @@
-export interface IFullPost{
+export interface IPost{
     nid: string,
     vid: string,
     type: string,
