@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { IPost } from '../interfaces';
+import { IFullPost, IPost } from '../interfaces';
 import { environment } from 'src/environments/environment';
 
 @Injectable({
@@ -17,7 +17,7 @@ export class PostService {
     return this.httpClient.get<IPost[]>(`${environment.serverUrl}${this.url}`);
   }
 
-  getPost(id: Number):Observable<IPost>{
-    return this.httpClient.get<IPost>(`${environment.serverUrl}${this.url}/${id}`)
+  getPost(id: Number):Observable<IFullPost>{
+    return this.httpClient.get<IFullPost>(`${environment.serverUrl}${this.url}/${id}`)
   }
 }

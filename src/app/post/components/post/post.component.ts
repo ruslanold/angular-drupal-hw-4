@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { IPost } from '../../interfaces';
+import { IFullPost } from '../../interfaces';
 
 @Component({
   selector: 'app-post',
@@ -8,7 +8,7 @@ import { IPost } from '../../interfaces';
   styleUrls: ['./post.component.css']
 })
 export class PostComponent implements OnInit {
-  post: IPost
+  post: IFullPost
   constructor( private activeRoute: ActivatedRoute) {
     this.activeRoute.data.subscribe( data => this.post = data.postData)
   }
