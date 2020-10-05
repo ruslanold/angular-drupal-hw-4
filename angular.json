@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "angularModulesHw4"
+    }
+  },
+  "defaultProject": "angularModulesHw4",
+  "cli": {
+    "analytics": "42655a2f-4c0f-49d4-9c0e-730a467303d5"
+  }
 }
