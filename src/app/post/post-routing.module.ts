@@ -3,16 +3,18 @@ import { RouterModule, Routes } from '@angular/router';
 import { AllPostComponent } from './components/all-post/all-post.component';
 import { PostComponent } from './components/post/post.component';
 import { PostsResolveService } from './services';
-import { PostResolveService } from './services/post-resolve.service';
+import { PostResolveService } from './services';
 
 const routes: Routes = [
     {
         path: '',
-        resolve: {allPosts: PostsResolveService},
+        resolve: { allPosts: PostsResolveService },
         component: AllPostComponent,
-        children: [
-            { path: '/:id', resolve: {postData: PostResolveService}, component: PostComponent }
-        ]
+    },
+    {
+        path: 'post/:id',
+        resolve: { postData: PostResolveService },
+        component: PostComponent
     }
 ];
 

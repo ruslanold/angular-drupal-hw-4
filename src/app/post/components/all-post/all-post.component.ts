@@ -12,11 +12,13 @@ export class AllPostComponent implements OnInit {
   posts: IPost[] 
 
   constructor(private activeRouter: ActivatedRoute) {
-    this.activeRouter.data.subscribe( data => this.posts = data.allPosts );
-   }
-
+    this.activeRouter.data.subscribe( data => {
+      console.log(data)
+      this.posts = data.allPosts 
+    });
+  }
+  
   ngOnInit(): void {
-    
   }
 
 }

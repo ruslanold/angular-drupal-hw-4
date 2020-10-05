@@ -13,5 +13,8 @@ export interface IPost{
     sticky: string,
     tnid: string,
     translate: string,
-    uri: string 
+    uri: string,
+    body?: object,
+    name?: string,
+    picture?: string
 }
