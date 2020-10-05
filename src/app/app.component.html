@@ -1,4 +1,12 @@
-<a routerLink="">Home</a>
-<a routerLink="/post">Post</a>
-<a routerLink="/user">User</a>
+<ul ngbNav [(activeId)]="activeId" class="nav-tabs">
+  <li [ngbNavItem]="1">
+    <a ngbNavLink routerLink="">Home</a>
+  </li>
+  <li [ngbNavItem]="2">
+    <a ngbNavLink routerLink="/post">Post</a>
+  </li>
+  <li [ngbNavItem]="3">
+    <a ngbNavLink routerLink="/user">User</a>
+  </li>
+</ul>
 <router-outlet></router-outlet>
