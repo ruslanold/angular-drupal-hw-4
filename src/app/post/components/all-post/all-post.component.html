@@ -1,1 +1,6 @@
-<p>all-post works!</p>
+<div *ngFor="let post of posts">
+    <div>{{post.nid}}</div>
+    <div>{{post.type}}</div>
+    <div>{{post.title}}</div>
+    <div>{{post.created}}</div>
+</div>
