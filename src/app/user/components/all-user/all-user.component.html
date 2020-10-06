@@ -1,6 +1,6 @@
 
 <div *ngFor="let user of users">
     <a routerLink="/user/{{user.uid}}">{{user.name}}</a>
-    <div>{{post.created}}</div>
-    <div>{{post.picture}}</div>
+    <div>{{user.created}}</div>
+    <div>{{user.picture}}</div>
 </div>
