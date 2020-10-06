@@ -27,7 +27,7 @@ section.u-image, .u-sheet.u-image, .u-group.u-image, .u-layout-cell.u-image {
     overflow: visible;
 }
 .u-section-2 {
-    background-image: linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(//images02.nicepage.io/c461c07…/1a2aab4…/GE-min.jpg);
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/v475-katie-101-abstractblackandwhitebg_1.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=86196a47d14e811c3149f69279f90c1e);
 }
 .u-section-2 .u-sheet-1 {
     min-height: 789px;

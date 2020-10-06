@@ -1,7 +1,37 @@
-<div *ngFor="let post of posts">
-    <a routerLink="/post/{{post.nid}}">{{post.title}}</a>
-    <div>{{post.created}}</div>
-    <div>{{post.picture}}</div>
-    <div>{{post.name_1}}</div>
-    <a routerLink="/user/{{post.uid}}">{{post.title}}</a>
+<div class="u-list u-repeater u-list-1">
+    <div 
+        *ngFor="let post of posts"
+        class="u-container-style u-list-item u-opacity u-opacity-75 u-palette-5-dark-3 u-repeater-item u-list-item-1"
+    >
+        <div class="u-container-layout u-similar-container u-valign-bottom-xl u-container-layout-1">
+            <div
+                class="u-icon u-icon-circle u-palette-3-base u-spacing-15 u-text-black u-icon-1"
+                routerLink="/user/{{post.uid}}"
+            >
+                <span [innerHTML]="post.picture" ></span>
+                <span class="u-icon-2">
+                    <img src="https://img.icons8.com/emoji/48/000000/man-shrugging.png"/>
+                    <img  src="https://img.icons8.com/emoji/48/000000/person-shrugging.png"/>
+                    <img src="https://img.icons8.com/emoji/48/000000/woman-shrugging.png"/>
+                </span>
+            </div>
+            
+            <div class="u-container-style u-group u-group-1">
+                <div class="u-container-layout u-container-layout-2">
+                    <h5 
+                        class="u-text u-text-1"
+                    >
+                        <a routerLink="/post/{{post.nid}}">{{post.title}}</a>
+                        
+                    </h5>
+                    <div>Date: {{post.created}}</div>
+                    <div>Tag: {{post.name_1}}</div>
+                    <a routerLink="/post/{{post.nid}}"></a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
+
