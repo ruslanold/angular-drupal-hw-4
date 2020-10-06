@@ -5,8 +5,6 @@ import { UserRoutingModule } from './user-roting.module';
 import { AllUserComponent } from './components/all-user/all-user.component';
 import { UserComponent } from './components/user/user.component';
 
-
-
 @NgModule({
   declarations: [AllUserComponent, UserComponent],
   imports: [
