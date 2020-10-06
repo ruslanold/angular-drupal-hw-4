@@ -1,12 +1,20 @@
-<ul ngbNav [(activeId)]="activeId" class="nav-tabs">
-  <li [ngbNavItem]="1">
-    <a ngbNavLink routerLink="">Home</a>
-  </li>
-  <li [ngbNavItem]="2">
-    <a ngbNavLink routerLink="/post">Post</a>
-  </li>
-  <li [ngbNavItem]="3">
-    <a ngbNavLink routerLink="/user">User</a>
-  </li>
-</ul>
-<router-outlet></router-outlet>
+<header class="u-clearfix u-header u-header">
+  <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+    <ul ngbNav [(activeId)]="activeId" class="nav-tabs">
+      <li [ngbNavItem]="1">
+        <a ngbNavLink routerLink="">Home</a>
+      </li>
+      <li [ngbNavItem]="2">
+        <a ngbNavLink routerLink="/post">Post</a>
+      </li>
+      <li [ngbNavItem]="3">
+        <a ngbNavLink routerLink="/user">User</a>
+      </li>
+    </ul>
+  </div>
+</header>
+<section class="u-align-center u-clearfix u-image u-shading u-section-2">
+  <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+    <router-outlet></router-outlet>
+  </div>
+</section>

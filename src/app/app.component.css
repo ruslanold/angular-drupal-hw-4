@@ -1,0 +1,49 @@
+header, section{
+    display: block;
+    position: relative;
+}
+.u-sheet {
+    position: relative;
+    width: 1140px;
+    margin: 0 auto;
+}
+.u-header .u-sheet-1 {
+    min-height: 80px;
+}
+.u-valign-middle {
+    justify-content: center;
+}
+.u-valign-middle, .u-valign-top, .u-valign-bottom {
+    display: flex;
+    flex-direction: column;
+}
+.u-header .u-menu-1 {
+    margin-top: -32px;
+    margin-right: 0px;
+    margin-bottom: 22px;
+    margin-left: auto;
+}
+section.u-image, .u-sheet.u-image, .u-group.u-image, .u-layout-cell.u-image {
+    overflow: visible;
+}
+.u-section-2 {
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(//images02.nicepage.io/c461c07…/1a2aab4…/GE-min.jpg);
+}
+.u-section-2 .u-sheet-1 {
+    min-height: 789px;
+}
+.u-shading, .u-overlap.u-overlap-contrast .u-header {
+    color: #ffffff;
+}
+.u-align-center {
+    text-align: center;
+}
+.u-image, .u-background-effect-image, .u-video-poster {
+    border-width: 0;
+    object-fit: cover;
+    display: block;
+    vertical-align: middle;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
