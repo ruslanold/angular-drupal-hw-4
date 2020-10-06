@@ -1,6 +1,6 @@
-# Angular Modules HOMEWORK 4
+## Angular Modules HOMEWORK 4
 
-### Drupal Web Api URL - http://k63983q2.beget.tech/web-api/
+#### Drupal Web Api URL - http://k63983q2.beget.tech/web-api/node
 
 -- GET	    /node
 
