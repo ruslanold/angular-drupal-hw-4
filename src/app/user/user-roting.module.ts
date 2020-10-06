@@ -12,7 +12,7 @@ const routes: Routes = [
         component: AllUserComponent
     },
     {
-        path: 'user/:id',
+        path: ':id',
         resolve: {userData: UserResolveService},
         component: UserComponent
     }
