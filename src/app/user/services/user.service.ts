@@ -8,7 +8,7 @@ import { environment } from "src/environments/environment";
 })
 export class UserService {
 
-  url: '/user'
+  url = '/user'
 
   constructor(private httpClient: HttpClient) { }
 
@@ -16,7 +16,7 @@ export class UserService {
     return this.httpClient.get<IUser[]>(`${environment.serverUrl}${this.url}`);
   }
 
-  getUser(id: number): Observable<IUser> {
+  getUser(id: string): Observable<IUser> {
     return this.httpClient.get<IUser>(`${environment.serverUrl}${this.url}/${id}`);
   }
 }

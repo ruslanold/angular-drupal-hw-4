@@ -17,7 +17,7 @@ export class PostService {
     return this.httpClient.get<IPost[]>(`${environment.serverUrl}/question`);
   }
 
-  getPost(id: Number):Observable<IFullPost>{
+  getPost(id: string):Observable<IFullPost>{
     return this.httpClient.get<IFullPost>(`${environment.serverUrl}${this.url}/${id}`)
   }
 }
