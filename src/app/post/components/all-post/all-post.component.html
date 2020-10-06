@@ -1,5 +1,7 @@
 <div *ngFor="let post of posts">
     <a routerLink="/post/{{post.nid}}">{{post.title}}</a>
-    <div>{{post.type}}</div>
     <div>{{post.created}}</div>
+    <div>{{post.picture}}</div>
+    <div>{{post.name_1}}</div>
+    <a routerLink="/user/{{post.uid}}">{{post.title}}</a>
 </div>

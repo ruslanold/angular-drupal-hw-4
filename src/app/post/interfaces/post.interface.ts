@@ -1,20 +1,12 @@
 export interface IPost{
-    nid: string,
-    vid: string,
-    type: string,
-    language: string,
-    title: string,
-    uid: string,
-    status: string,
-    created: string,
-    changed: string,
-    comment: string,
-    promote: string,
-    sticky: string,
-    tnid: string,
-    translate: string,
-    uri: string,
-    body?: object,
-    name?: string,
-    picture?: string
+    title: string;
+    field_vote: string;
+    field_answer_count: string;
+    nid: string;
+    created	: string;
+    uid	: string;
+    name: string;
+    picture	: string;
+    tid	: string;
+    name_1: string;
 }

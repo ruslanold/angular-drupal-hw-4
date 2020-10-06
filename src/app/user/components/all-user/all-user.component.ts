@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { IUser } from '../../interfaces';
 
 @Component({
   selector: 'app-all-user',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AllUserComponent implements OnInit {
 
-  constructor() { }
+  users: IUser[]
+
+  constructor( private activeRoute: ActivatedRoute) { }
 
   ngOnInit(): void {
+    this.activeRoute.data.subscribe( v => this.users = v.allUsers)
   }
 
 }
