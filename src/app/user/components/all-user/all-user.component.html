@@ -8,8 +8,7 @@
                 class="u-icon u-icon-circle u-palette-3-base u-spacing-15 u-text-black u-icon-1"
                 routerLink="/user/{{user.uid}}"
             >
-                <span [innerHTML]="post.picture" ></span>
-                <span class="u-icon-2">
+                <span class="u-icon-2">`
                     <img src="https://img.icons8.com/emoji/48/000000/man-shrugging.png"/>
                     <img  src="https://img.icons8.com/emoji/48/000000/person-shrugging.png"/>
                     <img src="https://img.icons8.com/emoji/48/000000/woman-shrugging.png"/>
@@ -21,13 +20,10 @@
                     <h5 
                         class="u-text u-text-1"
                     >
-                        <a routerLink="/post/{{post.nid}}">{{user.name}}</a>
+                        <a routerLink="/user/{{user.uid}}">{{user.name}}</a>
                         
                     </h5>
-                    <div>Date: {{post.created}}</div>
-                    <div>Tag: {{post.name_1}}</div>
-                    <a routerLink="/post/{{post.nid}}"></a>
-                    
+                    <div>Date: {{user.created}}</div>
                 </div>
             </div>
         </div>
